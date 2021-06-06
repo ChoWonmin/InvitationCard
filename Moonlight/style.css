@@ -82,11 +82,25 @@ section img#moon
 {
     mix-blend-mode: screen;
 }
-
+section img#mountains_front
+{
+    z-index: 10;
+}
 section #text
 {
     position: absolute;
     color: #fff;
     white-space: nowrap;
     font-size: 7.5vw;
+    z-index: 9;
+}
+section #btn
+{
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
 }
