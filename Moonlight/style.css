@@ -102,6 +102,7 @@ section img#mountains_front
 section #text
 {
     position: absolute;
+    right: -350px;
     color: #fff;
     white-space: nowrap;
     font-size: 7.5vw;
