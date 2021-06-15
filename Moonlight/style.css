@@ -15,6 +15,16 @@ body
     background: linear-gradient(#2b1055, #7597de);
     overflow-x: hidden;
 }
+body::-webkit-scrollbar {
+    width: 8px;
+}
+body::-webkit-scrollbar-thumb {
+    width: 8px;
+    background: #E0E0E0;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background: #BDBDBD;
+}
 
 header
 {
