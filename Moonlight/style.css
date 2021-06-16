@@ -15,6 +15,7 @@ body
     background: linear-gradient(#2b1055, #7597de);
     overflow-x: hidden;
 }
+
 body::-webkit-scrollbar {
     width: 8px;
 }
@@ -47,6 +48,7 @@ header .logo
     text-transform:  uppercase;
     letter-spacing: 2px;
 }
+
 header ul
 {
     display: flex;
@@ -119,6 +121,13 @@ section #text
     font-size: 7.5vw;
     z-index: 9;
 }
+@media only screen and (max-width: 600px) {
+    section #text {
+        right: -400px;
+        font-size: 17.5vw;
+    }
+}
+
 section #btn
 {
     text-decoration: none;
@@ -138,11 +147,22 @@ section #btn
     padding: 100px;
     background: #1c0522;
 }
+@media only screen and (max-width: 600px) {
+    .sec {
+        padding: 50px;
+    }
+    
+}
 .sec h2
 {
     font-size: 3.5em;
     margin-bottom: 10px;
     color: #fff;
+}
+@media only screen and (max-width: 600px) {
+    .sec h2 {
+        font-size: 2.5em;
+    }
 }
 .sec p
 {
