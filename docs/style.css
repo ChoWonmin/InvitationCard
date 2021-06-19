@@ -169,3 +169,15 @@ section #btn
     font-size: 1em;
     color: #fff;
 }
+
+
+#snowflake {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: red;
+    position: absolute;
+    z-index: 30000;
+    pointer-events: none;
+}

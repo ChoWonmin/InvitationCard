@@ -20,4 +20,13 @@ window.addEventListener('scroll', function() {
     // text.style.marginTop = `${value * 1.5}px`;
     // btn.style.marginTop = `${value * 1.5}px`;
     // header.style.marginTop = `${value * 0.5}px`;
-})
+});
+
+
+const canvas = document.getElementById('snowflake');
+const ctx = canvas.getContext("2d");
+const particlesOnScreen = 245;
+const particles = [];
+const w = canvas.width;
+const h = canvas.height;
+
