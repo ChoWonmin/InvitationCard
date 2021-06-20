@@ -27,6 +27,19 @@ const canvas = document.getElementById('snowflake');
 const ctx = canvas.getContext("2d");
 const particlesOnScreen = 245;
 const particles = [];
-const w = canvas.width;
-const h = canvas.height;
+let w = canvas.width;
+let h = canvas.height;
+
+function random(min, max) {
+    return min + Math.random() * (max-min + 1);
+}
+
+function clientResize(ev) {
+    w = canvas.width;
+    h = canvas.height;
+}
+window.addEventListener('resize', clientResize);
+
+
+
 
