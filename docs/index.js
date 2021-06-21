@@ -40,6 +40,17 @@ function clientResize(ev) {
 }
 window.addEventListener('resize', clientResize);
 
-
+function getSnoflakes() {
+    for (let i=0; i<particlesOnScreen; i++) {
+        particles.push({
+            x: Math.random() * w,
+            y: Math.random() * h,
+            opacity: Math.random(),
+            speedX: random(-11,11),
+            speedY: random(7,15),
+            radius: random(0.5, 4)
+        })
+    }
+}
 
 
