@@ -45,11 +45,17 @@ function getSnoflakes() {
         particles.push({
             x: Math.random() * w,
             y: Math.random() * h,
-            opacity: Math.random(),
+            opacity: Math.random(0.2, 1),
             speedX: random(-11,11),
             speedY: random(7,15),
             radius: random(0.5, 4)
         })
+    }
+}
+
+function drawSnowflakes() {
+    for (let i=0; i<particles.length; i++) {
+
     }
 }
 
