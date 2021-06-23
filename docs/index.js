@@ -55,7 +55,31 @@ function getSnoflakes() {
 
 function drawSnowflakes() {
     for (let i=0; i<particles.length; i++) {
+        let gradient = ctx.createRadialGraient(
+            particles[i].x,
+            particles[i].y,
+            0,
+            particles[i].x,
+            particles[i].y,
+            particles[i].radius
+        );
 
+        gradient.addColorStop(0, `rgba(255, 255, 255,${particles[i].opacity})`);
+        gradient.addColorStop(0.8, `rgba(210, 236, 242,${particles[i].opacity})`);
+        gradient.addColorStop(1, `rgba(237, 247, 249,${particles[i].opacity})`);
+
+        ctx.beginPath();
+        ctx.arc(
+            particles[i].x,
+            particles[i].y,
+            particles[i].radius,
+            0,
+            Math.PI * 2,
+            false
+        );
+
+        ctx.fillStyle = gradient;
+        ctx.fill();
     }
 }
 
