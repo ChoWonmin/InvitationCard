@@ -80,6 +80,18 @@ function drawSnowflakes() {
 
         ctx.fillStyle = gradient;
         ctx.fill();
+     }
+}
+
+function moveSnowFlakes() {
+    for (let i = 0; i < particles.length; i++) {
+        particles[i].x += particles[i].speedX;
+        particles[i].y += particles[i].speedY;
+
+        if (particles[i].y > h) {
+            particles[i].x = Math.random() * w * 1.5;
+            particles[i].y = -50;
+        }
     }
 }
 
