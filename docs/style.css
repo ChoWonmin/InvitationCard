@@ -176,7 +176,7 @@ section #btn
     height: 100vh;
     top: 0;
     left: 0;
-    background-color: red;
+    /* background-color: red; */
     position: absolute;
     z-index: 30000;
     pointer-events: none;

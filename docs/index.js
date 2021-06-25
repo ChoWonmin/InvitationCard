@@ -25,7 +25,8 @@ window.addEventListener('scroll', function() {
 
 const canvas = document.getElementById('snowflake');
 const ctx = canvas.getContext("2d");
-const particlesOnScreen = 245;
+
+const particlesOnScreen = 25;
 const particles = [];
 let w = canvas.width;
 let h = canvas.height;
@@ -34,7 +35,7 @@ function random(min, max) {
     return min + Math.random() * (max-min + 1);
 }
 
-function clientResize(ev) {
+function clientResize() {
     w = canvas.width;
     h = canvas.height;
 }
@@ -55,7 +56,7 @@ function getSnoflakes() {
 
 function drawSnowflakes() {
     for (let i=0; i<particles.length; i++) {
-        let gradient = ctx.createRadialGraient(
+        let gradient = ctx.createRadialGradient(
             particles[i].x,
             particles[i].y,
             0,
@@ -83,7 +84,7 @@ function drawSnowflakes() {
      }
 }
 
-function moveSnowFlakes() {
+function moveSnowflakes() {
     for (let i = 0; i < particles.length; i++) {
         particles[i].x += particles[i].speedX;
         particles[i].y += particles[i].speedY;
@@ -95,4 +96,14 @@ function moveSnowFlakes() {
     }
 }
 
+function updateSnowflakes() {
+    ctx.clearRect(0, 0, w, h);
+    drawSnowflakes();
+    moveSnowflakes();
+
+    requestAnimationFrame(updateSnowflakes);
+}
+
+requestAnimationFrame(updateSnowflakes)
+getSnoflakes();
 
