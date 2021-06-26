@@ -26,7 +26,7 @@ window.addEventListener('scroll', function() {
 const canvas = document.getElementById('snowflake');
 const ctx = canvas.getContext("2d");
 
-const particlesOnScreen = 25;
+const particlesOnScreen = 50;
 const particles = [];
 let w = canvas.width;
 let h = canvas.height;
@@ -47,9 +47,9 @@ function getSnoflakes() {
             x: Math.random() * w,
             y: Math.random() * h,
             opacity: Math.random(0.2, 1),
-            speedX: random(-11,11),
-            speedY: random(7,15),
-            radius: random(0.5, 4)
+            speedX: random(-0.1, 0.1),
+            speedY: random(0.1, 0.3),
+            radius: random(0.2, 1)
         })
     }
 }
