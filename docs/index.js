@@ -48,7 +48,7 @@ function getSnoflakes() {
             y: Math.random() * h,
             opacity: Math.random(0.2, 1),
             speedX: random(-0.1, 0.1),
-            speedY: random(0.1, 0.3),
+            speedY: random(0.05, 0.2),
             radius: random(0.2, 1)
         })
     }
