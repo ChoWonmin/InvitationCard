@@ -169,7 +169,7 @@ section #btn
 {
     font-size: 1em;
     color: #fff;
-    white-space: pre;
+    white-space: pre-wrap;
     word-wrap: break-word;
     width: 100%;
 }
