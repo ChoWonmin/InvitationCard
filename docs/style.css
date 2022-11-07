@@ -147,6 +147,7 @@ section #btn
     padding: 100px;
     background: #1c0522;
     width: 100%;
+    color: #fff;
 }
 @media only screen and (max-width: 600px) {
     .sec {
