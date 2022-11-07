@@ -9,11 +9,6 @@
     scroll-behavior: smooth;
 }
 
-p
-{
-    white-space: pre;
-}
-
 body
 {
     min-height: 100vh;
@@ -151,6 +146,7 @@ section #btn
     position: relative;
     padding: 100px;
     background: #1c0522;
+    width: 100%;
 }
 @media only screen and (max-width: 600px) {
     .sec {
@@ -173,6 +169,9 @@ section #btn
 {
     font-size: 1em;
     color: #fff;
+    white-space: pre;
+    word-wrap: break-word;
+    width: 100%;
 }
 
 
@@ -181,7 +180,6 @@ section #btn
     height: 100vh;
     top: 0;
     left: 0;
-    /* background-color: red; */
     position: absolute;
     z-index: 30000;
     pointer-events: none;
